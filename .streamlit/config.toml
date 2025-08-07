@@ -1,0 +1,36 @@
+[server]
+# Increase timeout limits for long-running GPU tasks
+maxUploadSize = 1000
+maxMessageSize = 1000
+enableCORS = false
+enableXsrfProtection = false
+
+# Connection and timeout settings
+headless = false
+runOnSave = false
+fileWatcherType = "none"
+
+# Browser connection settings
+port = 8502
+
+[browser]
+# Keep browser connection alive during long processing
+gatherUsageStats = false
+serverAddress = "localhost"
+serverPort = 8502
+
+[runner]
+# Allow long-running scripts
+magicEnabled = true
+postScriptGC = true
+fastReruns = true
+enforceSerializableSessionState = false
+
+[theme]
+# Dark theme configuration
+base = "dark"
+primaryColor = "#FF6B6B"
+backgroundColor = "#0E1117"
+secondaryBackgroundColor = "#262730"
+textColor = "#FAFAFA"
+font = "sans serif"
