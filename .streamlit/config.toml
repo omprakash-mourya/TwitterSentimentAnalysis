@@ -1,13 +1,11 @@
 [server]
-# Increase timeout limits for long-running GPU tasks
-maxUploadSize = 1000
-maxMessageSize = 1000
+port = 8501
 enableCORS = false
 enableXsrfProtection = false
+headless = true
 
-# Connection and timeout settings
-headless = false
-runOnSave = false
+[browser]
+gatherUsageStats = false
 fileWatcherType = "none"
 
 # Browser connection settings
