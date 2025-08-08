@@ -6,26 +6,14 @@ headless = true
 
 [browser]
 gatherUsageStats = false
-fileWatcherType = "none"
-
-# Browser connection settings
-port = 8502
-
-[browser]
-# Keep browser connection alive during long processing
-gatherUsageStats = false
-serverAddress = "localhost"
-serverPort = 8502
 
 [runner]
-# Allow long-running scripts
 magicEnabled = true
 postScriptGC = true
 fastReruns = true
 enforceSerializableSessionState = false
 
 [theme]
-# Dark theme configuration
 base = "dark"
 primaryColor = "#FF6B6B"
 backgroundColor = "#0E1117"
